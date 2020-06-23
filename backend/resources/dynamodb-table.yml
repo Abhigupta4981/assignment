@@ -1,0 +1,18 @@
+Resources:
+  EventsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: ${self:custom.eventsTableName}
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
+      AttributeDefinitions:
+        - AttributeName: user_id
+          AttributeType: S
+        - AttributeName: event_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: user_id
+          KeyType: HASH
+        - AttributeName: event_id
+          KeyType: RANGE
