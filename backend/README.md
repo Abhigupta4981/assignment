@@ -1,4 +1,4 @@
-# Serverless Go Boilerplate
+# Serverless Go Backend
 
 ## Prerequisites
 
@@ -7,14 +7,15 @@
 - [Go](https://golang.org/dl/)
 - [dep](https://github.com/golang/dep): `brew install dep && brew upgrade dep`
 
+Boilerplate taken from [here](https://github.com/yosriady/serverless-go-boilerplate/)
+
 ## Quick Start
 
-0. Clone the repo
 
-```
-git clone git@github.com:yosriady/serverless-go-boilerplate.git
-cd serverless-go-boilerplate
-```
+
+
+
+
 
 1. Install Go dependencies
 
